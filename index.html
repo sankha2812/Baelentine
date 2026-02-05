@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day! ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hearts-background"></div>
+    
+    <div class="container">
+        <header class="main-header">
+            <h1 class="title">Happy Valentine's Day!</h1>
+            <p class="subtitle">To the most amazing person in my life 💕</p>
+        </header>
+
+        <div class="main-content">
+            <!-- Interactive Heart Button -->
+            <div class="heart-container">
+                <div class="big-heart" id="mainHeart">
+                    <svg viewBox="0 0 32 29.6">
+                        <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+                    </svg>
+                </div>
+                <p class="heart-instruction">Click the heart! ❤️</p>
+            </div>
+
+            <!-- Love Messages Reveal -->
+            <div class="messages-section" id="messagesSection" style="display: none;">
+                <h2 class="section-title">Reasons Why I Love You</h2>
+                <p class="flip-instruction">Click on any card to flip! 🔄</p>
+                <div class="messages-grid">
+                    <div class="message-card-container">
+                        <div class="message-card">
+                            <div class="card-front">
+                                <div class="card-emoji">😊</div>
+                                <p>Your smile lights up my entire world</p>
+                            </div>
+                            <div class="card-back">
+                                <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=400&h=400&fit=crop" alt="Smile" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message-card-container">
+                        <div class="message-card">
+                            <div class="card-front">
+                                <div class="card-emoji">🌟</div>
+                                <p>You make every day feel special</p>
+                            </div>
+                            <div class="card-back">
+                                <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?w=400&h=400&fit=crop" alt="Special" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message-card-container">
+                        <div class="message-card">
+                            <div class="card-front">
+                                <div class="card-emoji">💪</div>
+                                <p>Your strength inspires me daily</p>
+                            </div>
+                            <div class="card-back">
+                                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=400&fit=crop" alt="Strength" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message-card-container">
+                        <div class="message-card">
+                            <div class="card-front">
+                                <div class="card-emoji">🎭</div>
+                                <p>You make me laugh like no one else</p>
+                            </div>
+                            <div class="card-back">
+                                <img src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=400&h=400&fit=crop" alt="Laugh" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message-card-container">
+                        <div class="message-card">
+                            <div class="card-front">
+                                <div class="card-emoji">🤗</div>
+                                <p>Your hugs feel like home</p>
+                            </div>
+                            <div class="card-back">
+                                <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=400&h=400&fit=crop" alt="Hug" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message-card-container">
+                        <div class="message-card">
+                            <div class="card-front">
+                                <div class="card-emoji">✨</div>
+                                <p>You bring magic into everything</p>
+                            </div>
+                            <div class="card-back">
+                                <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=400&h=400&fit=crop" alt="Magic" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Question -->
+            <div class="question-section" id="questionSection" style="display: none;">
+                <h2 class="question-text">Will you be my Valentine? 💝</h2>
+                <div class="buttons-container">
+                    <button class="btn btn-yes" id="yesBtn">Yes! 💕</button>
+                    <button class="btn btn-no" id="noBtn">No</button>
+                </div>
+            </div>
+
+            <!-- Final Message -->
+            <div class="final-section" id="finalSection" style="display: none;">
+                <div class="celebration">🎉</div>
+                <h2 class="final-title">You've made me the happiest! 🥰</h2>
+                <p class="final-message">
+                    Every moment with you is a treasure. Thank you for being you, 
+                    for your love, your kindness, and for choosing me. 
+                    Here's to many more beautiful moments together! 💑
+                </p>
+                <div class="love-signature">
+                    With all my love,<br>
+                    Forever Yours Babiiiii❤️
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating hearts for animation -->
+    <div class="floating-hearts-container" id="floatingHearts"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
