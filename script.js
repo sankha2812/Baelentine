@@ -9,6 +9,8 @@ const floatingHeartsContainer = document.getElementById('floatingHearts');
 
 let heartClicked = false;
 let noBtnClickCount = 0;
+const noEmojis = ['😢', '😭', '💔', '🥲', '😞'];
+let currentEmojiIndex = 0;
 
 // Main heart click event
 mainHeart.addEventListener('click', () => {
@@ -80,6 +82,11 @@ yesBtn.addEventListener('click', () => {
 noBtn.addEventListener('click', (e) => {
     noBtnClickCount++;
     
+    // Change emoji
+    const emoji = noEmojis[currentEmojiIndex];
+    noBtn.textContent = `No ${emoji}${emoji}`;
+    currentEmojiIndex = (currentEmojiIndex + 1) % noEmojis.length;
+    
     // Move the button randomly
     const container = document.querySelector('.buttons-container');
     const containerRect = container.getBoundingClientRect();
@@ -102,7 +109,7 @@ noBtn.addEventListener('click', (e) => {
         
         // Show a playful message
         const playfulMsg = document.createElement('p');
-        playfulMsg.textContent = "I knew you couldn't say no! 😊";
+        playfulMsg.textContent = "I knew you couldn't say no!😏";
         playfulMsg.style.cssText = `
             font-size: 1.3em;
             color: #ff1744;
