@@ -187,7 +187,7 @@ body {
 
 .message-card-container {
     perspective: 1000px;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 3 / 4;
 }
 
 .message-card {
@@ -236,6 +236,9 @@ body {
     transform: rotateY(180deg);
     padding: 0;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .card-back img {
